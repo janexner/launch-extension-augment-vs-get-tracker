@@ -1,4 +1,4 @@
-# launch-extension-augment-vs-get-tracker
+#launch-extension-augment-vs-get-tracker
 
 An Extension for Launch built for testing the interaction of Launch with the Analytics Extension and self-made Extensions using the Shared Modules.
 
