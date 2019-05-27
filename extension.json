@@ -1,0 +1,90 @@
+{
+  "displayName": "Analytics Test - Augment vs Get",
+  "name": "ags055-analytics-test-augment-vs-get",
+  "platform": "web",
+  "version": "1.0.12",
+  "description": "Testing the Shared Modules supplied by the Analytics Extension",
+  "author": {
+    "name": "Adobe Consulting - Jan Exner",
+    "email": "jexner@adobe.com"
+  },
+  "main": "src/lib/main.js",
+  "viewBasePath": "src/view/",
+  "iconPath": "resources/icons/logo.svg",
+  "events": [
+    {
+      "displayName": "Immediate Trigger",
+      "name": "immediate-trigger",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/immediateTrigger.js"
+    },
+    {
+      "displayName": "Delayed Trigger",
+      "name": "delayed-trigger",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/events/delayedTrigger.js"
+    }
+  ],
+  "conditions": [
+    {
+      "displayName": "Immediate Get and True",
+      "name": "immediate-get-and-true",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/conditions/immediateGetTrue.js"
+    },
+    {
+      "displayName": "Immediate Augment and True",
+      "name": "immediate-augment-and-true",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/conditions/immediateAugmentTrue.js"
+    },
+    {
+      "displayName": "Delayed Augment and True",
+      "name": "delayed-augment-and-true",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/conditions/delayedAugmentTrue.js"
+    }
+  ],
+  "actions": [
+    {
+      "displayName": "Augment Test",
+      "name": "augment-test",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/augmentTest.js"
+    },
+    {
+      "displayName": "Get Test",
+      "name": "get-test",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {}
+      },
+      "libPath": "src/lib/actions/getTest.js"
+    }
+  ]
+}
